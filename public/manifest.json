@@ -1,25 +1,33 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Starbucks",
+  "name": "Starbucks",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "https://app.starbucks.com/weblx/images/icons/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "https://app.starbucks.com/weblx/images/icons/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://app.starbucks.com/?utm_source=homescreen",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "theme_color": "#00A862",
+  "background_color": "#FFFFFF",
+  "related_applications": [
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/us/app/starbucks/id331177714?mt=8",
+      "id": "331177714"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.starbucks.mobilecard&hl=en",
+      "id": "com.starbucks.mobilecard"
+    }
+  ]
 }
