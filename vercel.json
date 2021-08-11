@@ -4,8 +4,8 @@
   },
   "redirects": [
     { 
-      "source": "/redirect/:path", 
-      "destination": "https://github.com/:path"
+      "source": "/redirect/:path*", 
+      "destination": "https://github.com/:path*"
     }
   ]
 }
