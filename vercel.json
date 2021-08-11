@@ -1,5 +1,11 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [
+    { 
+      "source": "/redirect/:path", 
+      "destination": "https://github.com/:path"
+    }
+  ]
 }
