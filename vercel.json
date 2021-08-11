@@ -5,7 +5,7 @@
   "redirects": [
     { 
       "source": "/redirect/:path*", 
-      "destination": "https://:path*"
+      "destination": "https:////:path*"
     }
   ]
 }
