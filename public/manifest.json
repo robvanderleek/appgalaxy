@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "start_url": "https://appgalaxy.vercel.app/redirect/app.starbucks.com/?utm_source=homescreen",
+  "start_url": "https://appgalaxy.vercel.app/redirect/app.starbucks.com",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#00A862",
