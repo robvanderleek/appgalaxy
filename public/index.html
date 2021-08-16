@@ -9,7 +9,8 @@
     <!--    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
     <link rel="apple-touch-icon"
           href="https://appgalaxy.vercel.app/redirect/app.starbucks.com/weblx/images/icons/pwa-icon-192.png"/>
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
+    <link rel="manifest" id="my-manifest-placeholder">
+    <!--    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,5 +25,24 @@
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
+<script>
+    var myDynamicManifest = {
+        "name": "Tower Game",
+        "short_name": "Tower Game",
+        "description": "Stack blocks and build the tallest tower!",
+        "start_url": "https://appgalaxy.vercel.app/redirect/towergame.app/",
+        "background_color": "#F95240",
+        "theme_color": "#F95240",
+        "icons": [{
+            "src": "https://appgalaxy.vercel.app/redirect/towergame.app/assets/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }]
+    }
+    const stringManifest = JSON.stringify(myDynamicManifest);
+    const blob = new Blob([stringManifest], {type: 'application/json'});
+    const manifestURL = URL.createObjectURL(blob);
+    document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+</script>
 </body>
 </html>
