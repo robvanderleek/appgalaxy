@@ -7,9 +7,10 @@
     <meta name="theme-color" content="#000000"/>
     <meta name="description" content="Web site created using create-react-app"/>
     <!--    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />-->
-    <link rel="apple-touch-icon"
-          href="https://appgalaxy.vercel.app/redirect/app.starbucks.com/weblx/images/icons/pwa-icon-192.png"/>
+    <!--    <link rel="apple-touch-icon"-->
+    <!--          href="https://appgalaxy.vercel.app/redirect/app.starbucks.com/weblx/images/icons/pwa-icon-192.png"/>-->
     <link rel="manifest" id="my-manifest-placeholder">
+    <link rel="apple-touch-icon" id="my-apple-touch-icon-placeholder"/>
     <!--    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>-->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -44,6 +45,9 @@
     const blob = new Blob([stringManifest], {type: 'application/json'});
     const manifestURL = URL.createObjectURL(blob);
     document.querySelector('#my-manifest-placeholder').setAttribute('href', manifestURL);
+
+    document.querySelector('#my-apple-touch-icon-placeholder').setAttribute('href',
+        'https://appgalaxy.vercel.app/redirect/towergame.app/assets/icon-192.png');
 </script>
 </body>
 </html>
